@@ -9,3 +9,6 @@
     font-display: swap;
   }
 }
+
+@include font('proxima-nova', 400, 'ProximaNova-Regular');
+@include font('proxima-nova', 600, 'ProximaNova-Semibold');

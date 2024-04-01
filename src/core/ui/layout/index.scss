@@ -1,16 +1,20 @@
 @use '../core/config/scss' as config;
 @use '../core/lib/scss' as lib;
 
+body {
+  background-color: #171722;
+  color: #fff;
+  font-family: 'proxima-nova', sans-serif;
+}
+
 .layout {
   display: flex;
-  min-height: 200vh;
+  min-height: 100vh;
   flex-direction: column;
 
   &__header {
-    position: sticky;
     top: 0;
   }
-
 
   &__main {
     flex-grow: 1;
@@ -20,3 +24,6 @@
     margin-top: auto;
   }
 }
+
+@import '../../../sections/header/header.scss';
+@import '../../../sections/sliders/sliders.scss';

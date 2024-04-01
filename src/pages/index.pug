@@ -1,9 +1,10 @@
-extends ../core/ui/layout/templates/map.pug
+extends ../core/ui/layout/templates/default.pug
 
 block title
-  | Карта проекта
+  | Тестовое задание SPIKS
+
+block beforeWorkarea
+  +header
 
 block workarea
-  h1 Карта проекта
-
-  a(href="ui.html") ui
+  +sliders
