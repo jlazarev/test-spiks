@@ -41,7 +41,7 @@ const sliderThc = document.getElementById('range-slider-thc');
 
 if (sliderThc) {
     noUiSlider.create(sliderThc, {
-        start: 63,
+        start: 62,
         tooltips: [{ to: function(value) { return Math.round(value); } }],
         connect: 'lower',
         step: 1,
@@ -67,7 +67,7 @@ const sliderCbd = document.getElementById('range-slider-cbd');
 
 if (sliderCbd) {
     noUiSlider.create(sliderCbd, {
-        start: 63,
+        start: 62,
         tooltips: [{ to: function(value) { return Math.round(value); } }],
         connect: 'lower',
         step: 1,

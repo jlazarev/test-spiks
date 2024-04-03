@@ -1,0 +1,141 @@
+.options {
+    padding: 15px 28px 30px;
+}
+
+.options__top-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.result {
+    margin-right: 29px;
+    margin-left: 7px;
+}
+
+.badges {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    min-height: 28px;
+}
+
+.badges__item {
+    padding: 6px 7px;
+    background-color: #297019;
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 22px;
+    letter-spacing: 0em;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.badges__close-btn {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 3px;
+    margin-right: 2px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.options__side-block {
+    width: 243px;
+    border: 1px solid #84D52C5C;
+    border-radius: 10px;
+    background-color: #353542;
+    padding-top: 2px;
+    padding-bottom: 23px;
+}
+
+.options__block {
+    background-color: transparent;
+    border: none;
+    margin-top: 0;
+}
+
+.options__title .ac-trigger {
+    color: #fff;
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 16px 10px;
+
+    &:focus {
+        color: #fff;
+    }
+
+    &::after {
+        width: 9px;
+        height: 9px;
+        content: "" !important;
+        border-left: 2px solid #959595;
+        border-bottom: 2px solid #959595;
+        transform: rotate(-45deg);
+        top: 16px;
+        right: 22px;
+    }
+}
+
+.ac.is-active > .ac-header .ac-trigger::after {
+    transform: rotate(135deg);
+    top: 20px;
+}
+
+.options__panel {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+}
+
+.options__input {
+    & + .options__label {
+        color: #959595;
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 8px;
+        cursor: pointer;
+        display: block;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border: none;
+            background-color: transparent;
+            border-radius: 2px;
+            left: 0;
+            top: 2px;
+            outline: 1px solid #959595;
+        }
+    }
+
+    &:checked + .options__label {
+        color: #fff;
+
+        &::before {
+            background-color: #84D52C;
+            outline: none;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 3px;
+            top: 5px;
+            width: 9px;
+            height: 7px;
+            border-radius: 1px;
+            border-left: 3px solid #fff;
+            border-bottom: 3px solid #fff;
+            transform: rotate(-45deg);
+        }
+    }
+}

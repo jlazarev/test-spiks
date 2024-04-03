@@ -1,0 +1,131 @@
+-   
+    var options = { 
+        Classification: [
+            {
+                id: '100Indica',
+                title: '100% Indica',
+                checked: true,
+            },
+            {
+                id: '100Sativa',
+                title: '100% Sativa',
+                checked: false,
+            },
+            {
+                id: '50Indica',
+                title: '>50% Indica',
+                checked: true,
+            },
+            {
+                id: '100Indica',
+                title: '100% Indica',
+                checked: true,
+            },
+        ],  
+    }
+
+mixin options(modifier)
+    section.options&attributes(attributes)
+        .options__top-block
+            .result 1034,5 Results
+            ul.badges
+                li.badges__item#badges-100Indica
+                    span.badges__text 100% Indica
+                    button.badges__close-btn(type="button")
+                        svg(viewBox="0 0 15 15" width="15" height="15")
+                            use(href="./assets/icons/default/sprite.svg#badge-close" x="0" y="0")
+                li.badges__item#badges-50Indica
+                    span.badges__text >50% Indica
+                    button.badges__close-btn(type="button")
+                        svg(viewBox="0 0 15 15" width="15" height="15")
+                            use(href="./assets/icons/default/sprite.svg#badge-close" x="0" y="0")
+                li.badges__item#badges-Indoor
+                    span.badges__text Indoor
+                    button.badges__close-btn(type="button")
+                        svg(viewBox="0 0 15 15" width="15" height="15")
+                            use(href="./assets/icons/default/sprite.svg#badge-close" x="0" y="0")
+                li.badges__item#badges-Flower
+                    span.badges__text Flower
+                    button.badges__close-btn(type="button")
+                        svg(viewBox="0 0 15 15" width="15" height="15")
+                            use(href="./assets/icons/default/sprite.svg#badge-close" x="0" y="0")
+        .options__side-block
+            .options__container.accordion-container
+                .options__block.ac
+                    h2.options__title.ac-header
+                        button.ac-trigger(type="button") Classification
+                    .options__panel.ac-panel 
+                        .options__item
+                            input.options__input.visually-hidden#100Indica(type="checkbox" name="100% Indica" checked)
+                            label.options__label(for="100Indica") 100% Indica
+                        .options__item
+                            input.options__input.visually-hidden#100Sativa(type="checkbox" name="100% Sativa")
+                            label.options__label(for="100Sativa") 100% Sativa
+                        .options__item
+                            input.options__input.visually-hidden#50Indica(type="checkbox" name=">50% Indica" checked)
+                            label.options__label(for="50Indica") >50% Indica
+                        .options__item
+                            input.options__input.visually-hidden#50Sativa(type="checkbox" name=">50% Sativa")
+                            label.options__label(for="50Sativa") >50% Sativa
+                .options__block.ac
+                    h2.options__title.ac-header
+                        button.ac-trigger(type="button") Production Method
+                    .options__panel.ac-panel 
+                        .options__item
+                            input.options__input.visually-hidden#Indoor(type="checkbox" name="Indoor" checked)
+                            label.options__label(for="Indoor") Indoor
+                        .options__item
+                            input.options__input.visually-hidden#Outdoor(type="checkbox" name="Outdoor")
+                            label.options__label(for="Outdoor") Outdoor
+                        .options__item
+                            input.options__input.visually-hidden#Greenhouse(type="checkbox" name="Greenhouse")
+                            label.options__label(for="Greenhouse") Greenhouse
+                        .options__item
+                            input.options__input.visually-hidden#LightDeprivation(type="checkbox" name="Light Deprivation")
+                            label.options__label(for="LightDeprivation") Light Deprivation
+                        .options__item
+                            input.options__input.visually-hidden#MixedLight(type="checkbox" name="Mixed Light")
+                            label.options__label(for="MixedLight") Mixed Light
+                        .options__item
+                            input.options__input.visually-hidden#Other(type="checkbox" name="Other")
+                            label.options__label(for="Other") Other
+                .options__block.ac
+                    h2.options__title.ac-header
+                        button.ac-trigger(type="button") Size
+                    .options__panel.ac-panel 
+                        .options__item
+                            input.options__input.visually-hidden#Flower(type="checkbox" name="Flower" checked)
+                            label.options__label(for="Flower") Flower
+                        .options__item
+                            input.options__input.visually-hidden#Pre-RollFlower(type="checkbox" name="Pre-Roll Flower")
+                            label.options__label(for="Pre-RollFlower") Pre-Roll Flower
+                        .options__item
+                            input.options__input.visually-hidden#Pre-RollInfused(type="checkbox" name="Pre-Roll Infused")
+                            label.options__label(for="Pre-RollInfused") Pre-Roll Infused
+                        .options__item
+                            input.options__input.visually-hidden#Pre-RollLeaf(type="checkbox" name="Pre-Roll Leaf")
+                            label.options__label(for="Pre-RollLeaf") Pre-Roll Leaf
+                        .options__item
+                            input.options__input.visually-hidden#Shake(type="checkbox" name="Shake")
+                            label.options__label(for="Shake") Shake
+                        .options__item
+                            input.options__input.visually-hidden#Smalls(type="checkbox" name="Smalls")
+                            label.options__label(for="Smalls") Smalls
+                        .options__item
+                            input.options__input.visually-hidden#Trim(type="checkbox" name="Trim")
+                            label.options__label(for="Trim") Trim
+                        .options__item
+                            input.options__input.visually-hidden#Shake2(type="checkbox" name="Shake2")
+                            label.options__label(for="Shake2") Shake2
+                        .options__item
+                            input.options__input.visually-hidden#Keef(type="checkbox" name="Keef")
+                            label.options__label(for="Keef") Keef
+                        .options__item
+                            input.options__input.visually-hidden#FreshFrozen(type="checkbox" name="Fresh Frozen")
+                            label.options__label(for="FreshFrozen") Fresh Frozen
+        template#tmpl-badge
+            li.badges__item
+                span.badges__text
+                button.badges__close-btn(type="button")
+                    svg(viewBox="0 0 15 15" width="15" height="15")
+                        use(href="./assets/icons/default/sprite.svg#badge-close" x="0" y="0")

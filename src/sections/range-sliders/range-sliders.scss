@@ -48,6 +48,7 @@ input[type=number] {
     border: none;
     top: -6px;
     right: -7px;
+    cursor: pointer;
 
     &::before,
     &::after {
@@ -105,6 +106,7 @@ input[type=number] {
     border-radius: 3px;
     text-align: end;
     padding-right: 16px;
+    letter-spacing: 0.02em;
 }
 
 .range-slider__count {
