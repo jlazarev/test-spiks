@@ -61,3 +61,43 @@ mixin range-sliders(modifier)
 			.radio-scale__block-bottom
 				span min 
 				span max
+		.dropdown
+			button.dropdown__btn(type="button"): span.dropdown__btn-inner
+				span.visually-hidden Выпадающий список
+				svg(viewBox="0 0 26 26" width="26" height="26")
+							use(href="./assets/icons/default/sprite.svg#filter" x="0" y="0")
+			.dropdown__content.dropdown__content--show
+				span.dropdown__title Sort by:
+				.drodown__block
+					bottun.dropdown__sort-btn 
+						svg(viewBox="0 0 24 24" width="24" height="24")
+							use(href="./assets/icons/default/sprite.svg#calendar" x="0" y="0")
+						span Date (New first)
+					bottun.dropdown__sort-btn 
+						svg(viewBox="0 0 24 24" width="24" height="24")
+							use(href="./assets/icons/default/sprite.svg#calendar" x="0" y="0")
+						span Date (Old first)
+					bottun.dropdown__sort-btn 
+						svg(viewBox="0 0 24 24" width="24" height="24")
+							use(href="./assets/icons/default/sprite.svg#arrow-top" x="0" y="0")
+						span Price (High first)
+					bottun.dropdown__sort-btn 
+						svg(viewBox="0 0 24 24" width="24" height="24")
+							use(href="./assets/icons/default/sprite.svg#arrow-down" x="0" y="0")
+						span Price (Low first)
+					bottun.dropdown__sort-btn 
+						svg(viewBox="0 0 24 22" width="24" height="22")
+							use(href="./assets/icons/default/sprite.svg#thc" x="0" y="0")
+						span Total THC (High first)
+					bottun.dropdown__sort-btn 
+						svg(viewBox="0 0 24 22" width="24" height="22")
+							use(href="./assets/icons/default/sprite.svg#thc" x="0" y="0")
+						span Total THC (Low first)
+					bottun.dropdown__sort-btn 
+						svg(viewBox="0 0 24 22" width="24" height="22")
+							use(href="./assets/icons/default/sprite.svg#cbd" x="0" y="0")
+						span Total CBD (High first)
+					bottun.dropdown__sort-btn 
+						svg(viewBox="0 0 24 22" width="24" height="22")
+							use(href="./assets/icons/default/sprite.svg#cbd" x="0" y="0")
+						span Total CBD (Low first)

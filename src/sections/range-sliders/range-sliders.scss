@@ -129,6 +129,10 @@ input[type=number] {
     font-size: 14px;
 }
 
+.radio-scale {
+    margin-right: auto;
+}
+
 .radio-scale__title {
     font-size: 16px;
     padding-top: 7px;
@@ -186,3 +190,71 @@ input[type=number] {
         color: #959595;
     }
 }
+
+.dropdown {
+    position: relative;
+    margin-top: 17px;
+    margin-right: 3px;
+}
+
+.dropdown__btn {
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+    background-color: #353542;
+    background-image: linear-gradient(#84D52C5C, #17172200);
+    padding: 1px;
+    cursor: pointer;
+}
+
+.dropdown__btn-inner {
+    background-color: #353542;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding-bottom: 1px;
+}
+
+.dropdown__title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.dropdown__content {
+    display: none;
+    position: absolute;
+    background-color: #212129;
+    padding: 20px;
+    top: 65px;
+    right: 0;
+    border-radius: 10px;
+
+    &--show {
+        display: block;
+    }
+}
+
+.dropdown__sort-btn {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    svg {
+        margin-right: 10px;
+    }
+
+    span {
+        white-space: nowrap;
+    }
+} 

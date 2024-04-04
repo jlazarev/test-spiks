@@ -87,3 +87,19 @@ if (sliderCbd) {
         sliderCbd.noUiSlider.set(inputCbd.value);
     });
 }
+
+// dropdown
+const dropdownBtn = document.querySelector('.dropdown__btn');
+const dropdownContent = document.querySelector('.dropdown__content');
+
+dropdownBtn.addEventListener('click', () => {
+    dropdownContent.classList.toggle('dropdown__content--show');
+});
+
+window.addEventListener('click', function (evt) {
+    if (!(evt.target.closest('.dropdown__content')) && !(evt.target.closest('.dropdown__btn'))) {
+        if (dropdownContent.classList.contains('dropdown__content--show')) {
+            dropdownContent.classList.remove('dropdown__content--show');
+        }
+    }
+});
