@@ -1508,6 +1508,20 @@ if (sliderCbd) {
     sliderCbd.noUiSlider.set(inputCbd.value);
   });
 }
+
+// dropdown
+var dropdownBtn = document.querySelector('.dropdown__btn');
+var dropdownContent = document.querySelector('.dropdown__content');
+dropdownBtn.addEventListener('click', function () {
+  dropdownContent.classList.toggle('dropdown__content--show');
+});
+window.addEventListener('click', function (evt) {
+  if (!evt.target.closest('.dropdown__content') && !evt.target.closest('.dropdown__btn')) {
+    if (dropdownContent.classList.contains('dropdown__content--show')) {
+      dropdownContent.classList.remove('dropdown__content--show');
+    }
+  }
+});
 // init Accordion
 new Accordion('.accordion-container', {
   showMultiple: true,
