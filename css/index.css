@@ -929,14 +929,21 @@ input[type=number] {
 
 .options__side-block {
   width: 243px;
-  border: 1px solid rgba(132, 213, 44, 0.3607843137);
   border-radius: 10px;
+  background-color: #353542;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(132, 213, 44, 0.3607843137)), to(rgba(23, 23, 34, 0)));
+  background-image: linear-gradient(rgba(132, 213, 44, 0.3607843137), rgba(23, 23, 34, 0));
+  padding: 1px;
+}
+
+.options__container {
+  padding-top: 2px;
+  padding-bottom: 23px;
   background-color: #353542;
   background-image: url("../assets/media/background-leaf.svg");
   background-repeat: no-repeat;
   background-position: 0 50%;
-  padding-top: 2px;
-  padding-bottom: 23px;
+  border-radius: 10px;
 }
 
 .options__block {
