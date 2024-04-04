@@ -511,6 +511,9 @@ body {
 
 .header__search-form {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header__search-field {
@@ -525,6 +528,7 @@ body {
   line-height: 21px;
   font-family: "proxima-nova", sans-serif;
   letter-spacing: 0.01em;
+  margin-right: 16px;
 }
 
 .header__search-field::-webkit-input-placeholder {
@@ -554,6 +558,50 @@ body {
   top: 12px;
   left: 20px;
   z-index: -10;
+}
+
+.header__label {
+  position: relative;
+  height: 48px;
+  background-color: #353542;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(132, 213, 44, 0.3607843137)), to(rgba(23, 23, 34, 0)));
+  background-image: linear-gradient(rgba(132, 213, 44, 0.3607843137), rgba(23, 23, 34, 0));
+  display: block;
+  padding: 1px;
+  margin-right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.header__label svg {
+  position: absolute;
+  top: 12px;
+  left: 21px;
+}
+
+.header__label span {
+  background-color: #353542;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 10px;
+  padding: 0 18px 0 53px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.header__checkbox:checked + .header__label {
+  -webkit-box-shadow: 0 3px 15px 0 rgba(132, 213, 44, 0.2);
+  box-shadow: 0 3px 15px 0 rgba(132, 213, 44, 0.2);
+}
+
+.header__checkbox:checked + .header__label span {
+  background-color: #212129;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -635,6 +683,21 @@ input[type=number] {
   content: "$";
   position: absolute;
   right: 6px;
+}
+
+.noUi-horizontal .noUi-tooltip::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  bottom: -5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-top: 5px solid #30303D;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
 }
 
 #range-slider-thc .noUi-tooltip::before,
@@ -749,6 +812,9 @@ input[type=number] {
   border: 1px solid rgba(132, 213, 44, 0.3607843137);
   border-radius: 10px;
   background-color: #353542;
+  background-image: url("../assets/media/background-leaf.svg");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
   padding-top: 2px;
   padding-bottom: 23px;
 }
