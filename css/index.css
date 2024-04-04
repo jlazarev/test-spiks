@@ -750,6 +750,73 @@ input[type=number] {
   font-size: 14px;
 }
 
+.radio-scale__title {
+  font-size: 16px;
+  padding-top: 7px;
+  margin-bottom: 6px;
+}
+
+.radio-scale__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.radio-scale__label {
+  width: 11.4px;
+  height: 20px;
+  display: block;
+  cursor: pointer;
+}
+
+.radio-scale__label::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 100%;
+  background-color: #cfcc5c;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.radio-scale__label:nth-of-type(5n) {
+  height: 26px;
+}
+
+.radio-scale__label:last-of-type {
+  width: 4px;
+}
+
+.radio-scale__block input:checked ~ .radio-scale__label::before {
+  background-color: #297019;
+}
+
+.radio-scale .radio-scale__block:hover .radio-scale__label::before {
+  background-color: #cfcc5c;
+}
+
+.radio-scale .radio-scale__block input:hover ~ .radio-scale__label::before {
+  background-color: #297019;
+}
+
+.radio-scale__block-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.radio-scale__block-bottom span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #959595;
+}
+
 .options {
   padding: 15px 28px 30px;
 }
