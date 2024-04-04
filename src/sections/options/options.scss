@@ -48,14 +48,21 @@
 
 .options__side-block {
     width: 243px;
-    border: 1px solid #84D52C5C;
     border-radius: 10px;
     background-color: #353542;
+    background-image: linear-gradient(#84D52C5C, #17172200);
+    padding: 1px;
+}
+
+.options__container {
+    padding-top: 2px;
+    padding-bottom: 23px;
+    background-color: #353542;
+    
     background-image: url('../assets/media/background-leaf.svg');
     background-repeat: no-repeat;
     background-position: 0 50%;
-    padding-top: 2px;
-    padding-bottom: 23px;
+    border-radius: 10px;
 }
 
 .options__block {
