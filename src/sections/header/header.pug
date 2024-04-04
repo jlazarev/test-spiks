@@ -6,3 +6,23 @@ mixin header(modifier)
       .header__search-svg
         svg(viewBox="0 0 24 24" width="24" height="24")
           use(href="./assets/icons/default/sprite.svg#search" x="0" y="0")
+      input.header__checkbox.visually-hidden#Buds(type="checkbox" name="Buds" checked)
+      label.header__label(for="Buds") 
+        svg(viewBox="0 0 24 24" width="24" height="24")
+          use(href="./assets/icons/default/sprite.svg#quality" x="0" y="0")
+        span Buds
+      input.header__checkbox.visually-hidden#Edible(type="checkbox" name="Edible")
+      label.header__label(for="Edible") 
+        svg(viewBox="0 0 24 24" width="24" height="24")
+          use(href="./assets/icons/default/sprite.svg#quality" x="0" y="0")
+        span Edible
+      input.header__checkbox.visually-hidden#NonEdible(type="checkbox" name="Non Edible")
+      label.header__label(for="NonEdible") 
+        svg(viewBox="0 0 24 24" width="24" height="24")
+          use(href="./assets/icons/default/sprite.svg#quality" x="0" y="0")
+        span Non Edible
+      input.header__checkbox.visually-hidden#Concentrate(type="checkbox" name="Concentrate")
+      label.header__label(for="Concentrate") 
+        svg(viewBox="0 0 24 24" width="24" height="24")
+          use(href="./assets/icons/default/sprite.svg#quality" x="0" y="0")
+        span Concentrate
