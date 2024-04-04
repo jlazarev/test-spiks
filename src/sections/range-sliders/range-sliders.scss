@@ -128,3 +128,61 @@ input[type=number] {
     right: 5px;
     font-size: 14px;
 }
+
+.radio-scale__title {
+    font-size: 16px;
+    padding-top: 7px;
+    margin-bottom: 6px;
+}
+
+.radio-scale__block {
+    display: flex;
+    align-items: flex-end;
+}
+
+.radio-scale__label {
+    width: 11.4px;
+    height: 20px;
+    display: block;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 100%;
+        background-color: #cfcc5c;
+        transition: background-color .3s;
+    }
+
+    &:nth-of-type(5n) {
+        height: 26px;
+    }
+
+    &:last-of-type {
+        width: 4px;
+    }
+}
+
+.radio-scale__block input:checked ~ .radio-scale__label::before {
+    background-color: #297019;
+}
+
+.radio-scale .radio-scale__block:hover .radio-scale__label::before {
+    background-color: #cfcc5c;
+}
+
+.radio-scale .radio-scale__block input:hover ~ .radio-scale__label::before {
+    background-color: #297019;
+}
+
+.radio-scale__block-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+        font-size: 12px;
+        line-height: 16px;
+        color: #959595;
+    }
+}
